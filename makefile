@@ -11,4 +11,4 @@ build-jar: build
 	jar cvfm bin/FakeWillGenerator.jar .manifest bin/*.class
 deploy-jar: install-dbuploader build-jar
 	touch .config
-	dropbox_uploader upload bin/FakeWillGenerator.jar public/FakeWillGenerator.jar -f -
+	./dropbox_uploader -f .config upload bin/FakeWillGenerator.jar public/FakeWillGenerator.jar
