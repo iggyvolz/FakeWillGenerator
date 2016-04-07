@@ -1,2 +1,9 @@
 language: java
 script: make build-jar
+deploy:
+  provider: releases
+  api_key:
+    secure: LtQwKFqi7fGX9w6JQn+L0y4duY/onRFoDaPUAJAWTEVYrYCbxBYjqeVQ06HiEA3R691xX00wkqeEZolKQwUlraL+AZ8lDgDdsFw6+WURKgTYuHGpocAGlSEx1YYgn/rThrTzTDxcDbT76XnSINOK/BYccUL/IyjCzSsA8KRUSyLoqf2FwfJrAMjm1MRdeALDSUrU13uyu1oi0TpcesbIgSWK5yRyBl9oE/8ncj5OTTbHIMx2vkfxkcSno+DAAljyNATQBED5h/wPohhidJ9JojPBe071rcYZbBTTM9+3sSu3ZsVdIBIuqMFsUrTvKsS+ddSkYuJaZHD29lq+z56jx6TM+ZZ1eoRspqR1l05DmDl+tZmGYbhtAiw+lhmVQEDiZG4rGf6RcOinspmED9nEeZxu+PGM3F0uWFu4N0WXDKdQkzzQRenWaNCYn4bpWd8Qp6B6MBn6yv0QVzzaHLwsI/Vk/qur4snQpJpyI6c5RMM9WY3FCCPidCp+PMKspi90+mnnSxTZDBhCOZB4XRPAxh2R71tlFjbqRKznYcyMFscBT/sxZN0ZJV/DzX27bA6wiIfcrhqH2IRkUjladvVvROL5e6c7NubulqoR96uimD1ZzqG5QYH9rp58JnaczpelKW8MkjC9BB0B+iQMaTWF5upKLqAbfGaDtrguXQjC7jE=
+  file: bin/FakeWillGenerator.jar
+  on:
+    repo: iggyvolz/FakeWillGenerator
